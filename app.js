@@ -1,3 +1,3 @@
-function alertButton(){
+function alertButton() {
     alert("Hello");
 }
