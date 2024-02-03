@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/theme/material.min.css">
+    <link rel="stylesheet" href="codeEditor.css">
+    <link rel="stylesheet" href="../Styles/general.css">
+</head>
+<body>
+
+    <header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="./codeEditor.html">Code Editor</a></li>
+				<!-- <li><a href="./about.html">About</a></li> -->
+				<!-- <li><a href="./projects.html">Projects</a></li> -->
+				<!-- <li><a href="./resume.html">Resume</a></li> -->
+				<!-- <li><a href="./contact.html">Contact</a></li> -->
+			</ul>
+		</nav>
+	</header>
+
+<div class="btn-container">
+    <div>
+        <button class="btn" onclick="runCode()">Run (Ctrl + Enter)</button>
+        <input type="file" id="fileInput" accept=".js" onchange="loadFile(event)">
+    </div>
+    <div>
+        <button class="btn" onclick="saveFile()">Save</button>
+        <button class="btn" onclick="openInNewTab()">Open in New Tab</button>
+    </div>
+</div>
+<div id="editor-container">
+    <textarea id="editor">
+function greet() {
+    return "Hello, World!";
+}
+
+greet();
+    </textarea>
+    <div id="preview">Output will appear here...</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/javascript/javascript.min.js"></script>
+<script src="codeEditor.js"></script>
+
+</body>
+</html>
