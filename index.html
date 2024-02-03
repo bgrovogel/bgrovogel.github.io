@@ -2,39 +2,49 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="style.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="Styles/general.css">
+	<link rel="stylesheet" href="Styles/about.css">
 </head>
 
 <body class="background-image" background="Pictures/locoCoyoteGrill.jpg">
-	<!-- Navigation Bar -->
-	<div class="topnav">
-		<table style="width: 100%;">
-			<tbody>
-				<tr>
-					<td style="padding-left: 25px; text-align: left; width: 60%;">
-						<span id="name">Brandon Grovogel</span>
-					</td>
-					<td style="width: 40%;">
-						<a class="active" href="./index.html">Home</a>
-						<a href="./about.html">About</a>
-						<a href="./projects.html">Projects</a>
-						<a href="./contact.html">Contact</a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+	<header>
+		<nav>
+			<ul>
+				<li><a class="active" href="./index.html">Home</a></li>
+				<li><a href="./about.html">About</a></li>
+				<!-- <li><a href="./projects.html">Projects</a></li> -->
+				<li><a href="./resume.html">Resume</a></li>
+				<!-- <li><a href="./contact.html">Contact</a></li> -->
+			</ul>
+		</nav>
+	</header>
 
-	<div style="padding-left: 16px">
-		<h2>Top Navigation Example</h2>
-		<p>Some content..</p>
-	</div>
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<h1>Welcome to My Website</h1>
+				<p>Hi there, I'm Brandon Grovogel, a versatile software engineer specializing in full stack development. With a
+					keen eye for detail and a passion for problem-solving, I thrive in the dynamic world of web development.</p>
+			</div>
+		</section>
+
+		<section>
+			<p>Section here</p>
+		</section>
+
+		<section>
+			<p>Section here</p>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p>&copy; 2024 Brandon Grovogel - All rights reserved</p>
+	</footer>
 </body>
-
-<!-- <body class="background-image" background="Pictures/locoCoyoteGrill.jpg">
-	<h1>Brandon Grovogel</h1>
-	<button onclick="alertButton()">Click me</button>
-</body> -->
 
 <script src="app.js"></script>
 
